@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations | Groupe CGDL</title>
+    <meta name="description" content="Découvrez les réalisations de Groupe CGDL — gestion de projet, rénovations, agrandissements résidentiels et commerciaux.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: '#E30A15', dark: '#121212', darker: '#0a0a0a', surface: '#1e1e1e' },
+                    fontFamily: { sans: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/shared.css">
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-brand selection:text-white">
+
+    <div class="noise-overlay"></div>
+
+    <header id="navbar" class="fixed w-full z-50 top-0 py-6 px-6 lg:px-12 flex justify-between items-center text-white navbar-scrolled">
+        <a href="index.html" class="flex items-center gap-3 z-50">
+            <img src="logo.png" alt="Logo Groupe CGDL" class="w-36 h-auto object-contain">
+        </a>
+        <nav class="hidden md:flex gap-8 text-sm uppercase tracking-wider font-medium items-center">
+            <div class="nav-dropdown relative">
+                <button class="hover:text-brand transition-colors flex items-center gap-2">Services <i class="fa-solid fa-chevron-down text-xs"></i></button>
+                <div class="nav-dropdown-menu">
+                    <div class="bg-darker border border-gray-800 py-2 shadow-xl">
+                        <a href="services/gestion-projet-residentiel.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Gestion de projet résidentiel</a>
+                        <a href="services/gestion-projet-commercial.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Gestion de projet commercial</a>
+                        <a href="services/renovations-residentielles.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Rénovations résidentielles</a>
+                        <a href="services/renovations-commerciales.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Rénovations commerciales</a>
+                        <a href="services/agrandissements-residentiel.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Agrandissements résidentiel</a>
+                        <a href="services/agrandissements-commercial.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Agrandissements commercial</a>
+                        <a href="services/autres-services.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Autres services (jobines)</a>
+                    </div>
+                </div>
+            </div>
+            <a href="a-propos.html" class="hover:text-brand transition-colors">À Propos</a>
+            <a href="realisations.html" class="text-brand transition-colors">Réalisations</a>
+            <a href="index.html#faq" class="hover:text-brand transition-colors">FAQ</a>
+            <a href="soumission.html" class="px-6 py-3 border border-brand text-brand hover:bg-brand hover:text-white transition-all duration-300">Nous Contacter</a>
+        </nav>
+        <button class="md:hidden text-2xl z-50 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-darker flex flex-col items-center justify-center gap-6 text-lg z-40 overflow-y-auto py-24">
+            <a href="services/gestion-projet-residentiel.html" class="hover:text-brand">Services</a>
+            <a href="a-propos.html" class="hover:text-brand">À Propos</a>
+            <a href="realisations.html" class="text-brand">Réalisations</a>
+            <a href="soumission.html" class="hover:text-brand">Contact</a>
+        </div>
+    </header>
+
+    <section class="page-hero pt-32">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356f12?auto=format&fit=crop&q=80&w=1600" alt="Réalisations Groupe CGDL">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+            <p class="text-brand uppercase tracking-[0.3em] text-sm mb-4 font-semibold">Portfolio</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-6 leading-tight">Nos Réalisations</h1>
+            <p class="text-gray-300 text-lg md:text-xl font-light max-w-2xl mx-auto">Des projets résidentiels et commerciaux exécutés avec rigueur, fiabilité et excellence de finition.</p>
+        </div>
+    </section>
+
+    <!-- Gestion de projet -->
+    <section id="gestion-projet" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="text-sm text-brand uppercase tracking-[0.2em] mb-2 font-bold">Gestion de projet</h2>
+                    <h3 class="text-3xl md:text-4xl font-light uppercase tracking-wider">Résidentiel & Commercial</h3>
+                </div>
+                <a href="services/gestion-projet-residentiel.html" class="hidden md:inline-block text-brand text-sm uppercase tracking-widest hover:underline mt-4 md:mt-0">En savoir plus <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden h-[350px]" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800" alt="Gestion de projet résidentiel" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker via-darker/30 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6">
+                        <span class="text-brand text-xs uppercase tracking-[0.2em] font-bold">Résidentiel</span>
+                        <h4 class="text-xl font-medium text-white mt-1">Rénovation complète — Sherbrooke</h4>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden h-[350px]" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Gestion de projet commercial" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker via-darker/30 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6">
+                        <span class="text-brand text-xs uppercase tracking-[0.2em] font-bold">Commercial</span>
+                        <h4 class="text-xl font-medium text-white mt-1">Aménagement de bureaux — Estrie</h4>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden h-[350px]" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356f12?auto=format&fit=crop&q=80&w=800" alt="Supervision de chantier" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker via-darker/30 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6">
+                        <span class="text-brand text-xs uppercase tracking-[0.2em] font-bold">Gestion</span>
+                        <h4 class="text-xl font-medium text-white mt-1">Coordination multi-métiers</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rénovations résidentielles -->
+    <section id="renovations-residentielles" class="py-24 bg-darker border-y border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="text-sm text-brand uppercase tracking-[0.2em] mb-2 font-bold">Rénovations</h2>
+                    <h3 class="text-3xl md:text-4xl font-light uppercase tracking-wider">Résidentielles</h3>
+                </div>
+                <a href="services/renovations-residentielles.html" class="hidden md:inline-block text-brand text-sm uppercase tracking-widest hover:underline mt-4 md:mt-0">En savoir plus <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group relative overflow-hidden h-[300px]" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=800" alt="Cuisine rénovée" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-5"><h4 class="text-lg font-medium text-white">Cuisine moderne</h4></div>
+                </div>
+                <div class="group relative overflow-hidden h-[300px]" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800" alt="Salle de bain" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-5"><h4 class="text-lg font-medium text-white">Salle de bain spa</h4></div>
+                </div>
+                <div class="group relative overflow-hidden h-[300px]" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Salon rénové" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-5"><h4 class="text-lg font-medium text-white">Rez-de-chaussée</h4></div>
+                </div>
+                <div class="group relative overflow-hidden h-[300px]" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1518481180252-09fb2a4d3148?auto=format&fit=crop&q=80&w=800" alt="Sous-sol fini" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-5"><h4 class="text-lg font-medium text-white">Finition sous-sol</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rénovations commerciales -->
+    <section id="renovations-commerciales" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="text-sm text-brand uppercase tracking-[0.2em] mb-2 font-bold">Rénovations</h2>
+                    <h3 class="text-3xl md:text-4xl font-light uppercase tracking-wider">Commerciales</h3>
+                </div>
+                <a href="services/renovations-commerciales.html" class="hidden md:inline-block text-brand text-sm uppercase tracking-widest hover:underline mt-4 md:mt-0">En savoir plus <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden h-[350px]" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800" alt="Bureau commercial" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-6"><h4 class="text-xl font-medium text-white">Espace de bureaux</h4></div>
+                </div>
+                <div class="group relative overflow-hidden h-[350px]" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800" alt="Boutique rénovée" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-6"><h4 class="text-xl font-medium text-white">Commerce de détail</h4></div>
+                </div>
+                <div class="group relative overflow-hidden h-[350px]" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e97?auto=format&fit=crop&q=80&w=800" alt="Façade commerciale" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-6"><h4 class="text-xl font-medium text-white">Façade & entrée</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agrandissements résidentiels -->
+    <section id="agrandissements-residentiel" class="py-24 bg-darker border-y border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="text-sm text-brand uppercase tracking-[0.2em] mb-2 font-bold">Agrandissements</h2>
+                    <h3 class="text-3xl md:text-4xl font-light uppercase tracking-wider">Résidentiels</h3>
+                </div>
+                <a href="services/agrandissements-residentiel.html" class="hidden md:inline-block text-brand text-sm uppercase tracking-widest hover:underline mt-4 md:mt-0">En savoir plus <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="group relative overflow-hidden h-[400px]" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Agrandissement résidentiel" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-8">
+                        <span class="text-brand text-xs uppercase tracking-[0.2em] font-bold">Extension latérale</span>
+                        <h4 class="text-2xl font-medium text-white mt-1">Résidence Estrie</h4>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden h-[400px]" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800" alt="Ajout d'étage" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-8">
+                        <span class="text-brand text-xs uppercase tracking-[0.2em] font-bold">Deuxième étage</span>
+                        <h4 class="text-2xl font-medium text-white mt-1">Maison des années 50</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agrandissements commerciaux -->
+    <section id="agrandissements-commercial" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="text-sm text-brand uppercase tracking-[0.2em] mb-2 font-bold">Agrandissements</h2>
+                    <h3 class="text-3xl md:text-4xl font-light uppercase tracking-wider">Commerciaux</h3>
+                </div>
+                <a href="services/agrandissements-commercial.html" class="hidden md:inline-block text-brand text-sm uppercase tracking-widest hover:underline mt-4 md:mt-0">En savoir plus <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden h-[350px]" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Extension commerciale" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-6"><h4 class="text-xl font-medium text-white">Extension d'entrepôt</h4></div>
+                </div>
+                <div class="group relative overflow-hidden h-[350px]" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800" alt="Agrandissement boutique" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-6"><h4 class="text-xl font-medium text-white">Surface commerciale</h4></div>
+                </div>
+                <div class="group relative overflow-hidden h-[350px]" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Bureaux agrandis" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker to-transparent"></div>
+                    <div class="absolute bottom-0 p-6"><h4 class="text-xl font-medium text-white">Bureaux Tech Sherbrooke</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autres services / jobines -->
+    <section id="autres-services" class="py-24 bg-darker border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="text-sm text-brand uppercase tracking-[0.2em] mb-2 font-bold">Les jobines</h2>
+                    <h3 class="text-3xl md:text-4xl font-light uppercase tracking-wider">Autres Services</h3>
+                </div>
+                <a href="services/autres-services.html" class="hidden md:inline-block text-brand text-sm uppercase tracking-widest hover:underline mt-4 md:mt-0">En savoir plus <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="group relative overflow-hidden h-[200px]" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=400" alt="Cuisine" class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500">
+                    <div class="absolute inset-0 bg-darker/50 flex items-end p-3"><span class="text-xs uppercase tracking-wider font-semibold">Cuisine</span></div>
+                </div>
+                <div class="group relative overflow-hidden h-[200px]" data-aos="fade-up" data-aos-delay="150">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400" alt="Salle de bain" class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500">
+                    <div class="absolute inset-0 bg-darker/50 flex items-end p-3"><span class="text-xs uppercase tracking-wider font-semibold">Salle de bain</span></div>
+                </div>
+                <div class="group relative overflow-hidden h-[200px]" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1518481180252-09fb2a4d3148?auto=format&fit=crop&q=80&w=400" alt="Sous-sol" class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500">
+                    <div class="absolute inset-0 bg-darker/50 flex items-end p-3"><span class="text-xs uppercase tracking-wider font-semibold">Sous-sol</span></div>
+                </div>
+                <div class="group relative overflow-hidden h-[200px]" data-aos="fade-up" data-aos-delay="250">
+                    <img src="https://images.unsplash.com/photo-1632778149955-e89f9a7b4615?auto=format&fit=crop&q=80&w=400" alt="Toiture" class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500">
+                    <div class="absolute inset-0 bg-darker/50 flex items-end p-3"><span class="text-xs uppercase tracking-wider font-semibold">Toiture</span></div>
+                </div>
+                <div class="group relative overflow-hidden h-[200px]" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=400" alt="Planchers" class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500">
+                    <div class="absolute inset-0 bg-darker/50 flex items-end p-3"><span class="text-xs uppercase tracking-wider font-semibold">Planchers</span></div>
+                </div>
+                <div class="group relative overflow-hidden h-[200px]" data-aos="fade-up" data-aos-delay="350">
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=400" alt="Revêtement" class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500">
+                    <div class="absolute inset-0 bg-darker/50 flex items-end p-3"><span class="text-xs uppercase tracking-wider font-semibold">Revêtement</span></div>
+                </div>
+            </div>
+            <p class="text-gray-500 text-sm text-center mt-8 font-light italic">Les photos seront remplacées par vos réalisations réelles une fois fournies.</p>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand">
+        <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-light uppercase tracking-wider mb-6 text-white">Votre projet pourrait être ici</h2>
+            <p class="text-white/80 font-light mb-10 text-lg">Contactez-nous pour discuter de votre prochain projet de rénovation ou d'agrandissement.</p>
+            <a href="soumission.html" class="inline-block bg-white text-brand px-10 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-dark hover:text-white transition-all duration-300">Demander une soumission</a>
+        </div>
+    </section>
+
+    <footer class="bg-[#050505] py-12 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo.png" alt="Logo Groupe CGDL" class="w-36 h-auto object-contain">
+                </a>
+                <p class="text-gray-600 text-sm font-light text-center">&copy; <script>document.write(new Date().getFullYear())</script> Groupe CGDL. Tous droits réservés.</p>
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/profile.php?id=100063132765716" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-brand hover:border-brand transition-all">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="text-gray-600 text-xs font-light text-center mt-8">Conception web par <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="text-brand hover:underline">Roy Marketing</a></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

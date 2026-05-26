@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | Groupe CGDL</title>
+    <meta name="description" content="Découvrez l'histoire de Groupe CGDL, entreprise familiale fondée en 2018, et rencontrez l'équipe derrière vos projets de rénovation et d'agrandissement.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: '#E30A15', dark: '#121212', darker: '#0a0a0a', surface: '#1e1e1e' },
+                    fontFamily: { sans: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/shared.css">
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-brand selection:text-white">
+
+    <div class="noise-overlay"></div>
+
+    <header id="navbar" class="fixed w-full z-50 top-0 py-6 px-6 lg:px-12 flex justify-between items-center text-white navbar-scrolled">
+        <a href="index.html" class="flex items-center gap-3 z-50">
+            <img src="logo.png" alt="Logo Groupe CGDL" class="w-36 h-auto object-contain">
+        </a>
+        <nav class="hidden md:flex gap-8 text-sm uppercase tracking-wider font-medium items-center">
+            <div class="nav-dropdown relative">
+                <button class="hover:text-brand transition-colors flex items-center gap-2">Services <i class="fa-solid fa-chevron-down text-xs"></i></button>
+                <div class="nav-dropdown-menu">
+                    <div class="bg-darker border border-gray-800 py-2 shadow-xl">
+                        <a href="services/gestion-projet-residentiel.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Gestion de projet résidentiel</a>
+                        <a href="services/gestion-projet-commercial.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Gestion de projet commercial</a>
+                        <a href="services/renovations-residentielles.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Rénovations résidentielles</a>
+                        <a href="services/renovations-commerciales.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Rénovations commerciales</a>
+                        <a href="services/agrandissements-residentiel.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Agrandissements résidentiel</a>
+                        <a href="services/agrandissements-commercial.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Agrandissements commercial</a>
+                        <a href="services/autres-services.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Autres services (jobines)</a>
+                    </div>
+                </div>
+            </div>
+            <a href="a-propos.html" class="text-brand transition-colors">À Propos</a>
+            <a href="realisations.html" class="hover:text-brand transition-colors">Réalisations</a>
+            <a href="index.html#faq" class="hover:text-brand transition-colors">FAQ</a>
+            <a href="soumission.html" class="px-6 py-3 border border-brand text-brand hover:bg-brand hover:text-white transition-all duration-300">Nous Contacter</a>
+        </nav>
+        <button class="md:hidden text-2xl z-50 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-darker flex flex-col items-center justify-center gap-6 text-lg z-40 overflow-y-auto py-24">
+            <a href="services/gestion-projet-residentiel.html" class="hover:text-brand">Services</a>
+            <a href="a-propos.html" class="text-brand">À Propos</a>
+            <a href="realisations.html" class="hover:text-brand">Réalisations</a>
+            <a href="soumission.html" class="hover:text-brand">Contact</a>
+        </div>
+    </header>
+
+    <section class="page-hero pt-32">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1600" alt="À propos de Groupe CGDL">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+            <p class="text-brand uppercase tracking-[0.3em] text-sm mb-4 font-semibold">Notre histoire</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-6 leading-tight">À Propos</h1>
+            <p class="text-gray-300 text-lg md:text-xl font-light max-w-2xl mx-auto">Une entreprise familiale bâtie sur la fiabilité, la durabilité et l'excellence de finition.</p>
+        </div>
+    </section>
+
+    <!-- Historique -->
+    <section class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative img-zoom-container" data-aos="fade-right">
+                    <div class="absolute inset-0 bg-brand translate-x-4 translate-y-4"></div>
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356f12?auto=format&fit=crop&q=80&w=1000" alt="Chantier Groupe CGDL" class="relative z-10 w-full h-auto grayscale-[40%] img-zoom">
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-sm text-brand uppercase tracking-[0.2em] mb-2 font-bold">Historique</h2>
+                    <h3 class="text-3xl md:text-4xl font-light uppercase tracking-wider mb-6">L'excellence en <span class="font-bold">héritage</span></h3>
+                    <p class="text-gray-400 font-light leading-relaxed mb-6">
+                        Fondée en <strong class="text-white">2018</strong>, Groupe CGDL est née d'une vision claire : offrir aux propriétaires résidentiels et commerciaux de l'Estrie un service de gestion de projet transparent, rigoureux et personnalisé.
+                    </p>
+                    <p class="text-gray-400 font-light leading-relaxed mb-6">
+                        Sous la direction de <strong class="text-white">Cédrik Grenier</strong>, l'entreprise a évolué en structure familiale, portée par plus de <strong class="text-white">15 ans d'expérience</strong> dans la coordination de chantiers complexes — agrandissements, rénovations majeures et transformations commerciales.
+                    </p>
+                    <p class="text-gray-400 font-light leading-relaxed">
+                        Notre philosophie est simple : nous ne bâtissons pas de neuf, nous sublimons l'existant. Chaque projet, quelle que soit son envergure, bénéficie de la même exigence en matière de qualité, de respect des délais et de communication avec le client.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-24 bg-darker border-y border-gray-900">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-sm text-brand uppercase tracking-[0.2em] mb-2 font-bold">Notre parcours</h2>
+                <h3 class="text-3xl md:text-4xl font-light uppercase tracking-wider">Chronologie</h3>
+                <div class="w-16 h-1 bg-brand mx-auto mt-6"></div>
+            </div>
+            <div class="space-y-0">
+                <div class="flex gap-8 pb-12 relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex flex-col items-center shrink-0">
+                        <div class="w-4 h-4 bg-brand rounded-full"></div>
+                        <div class="w-px h-full bg-gray-800 mt-2"></div>
+                    </div>
+                    <div class="pb-4">
+                        <span class="text-brand font-bold text-lg">2009</span>
+                        <h4 class="text-xl font-semibold uppercase mt-1 mb-2">Débuts dans la construction</h4>
+                        <p class="text-gray-400 font-light text-sm">Cédrik Grenier accumule une expertise terrain sur des projets résidentiels et commerciaux d'envergure dans la région de l'Estrie.</p>
+                    </div>
+                </div>
+                <div class="flex gap-8 pb-12 relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex flex-col items-center shrink-0">
+                        <div class="w-4 h-4 bg-brand rounded-full"></div>
+                        <div class="w-px h-full bg-gray-800 mt-2"></div>
+                    </div>
+                    <div class="pb-4">
+                        <span class="text-brand font-bold text-lg">2018</span>
+                        <h4 class="text-xl font-semibold uppercase mt-1 mb-2">Fondation de Groupe CGDL</h4>
+                        <p class="text-gray-400 font-light text-sm">Création officielle de l'entreprise avec une mission claire : devenir la référence en gestion de projet pour les transformations de bâtiments existants.</p>
+                    </div>
+                </div>
+                <div class="flex gap-8 pb-12 relative" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex flex-col items-center shrink-0">
+                        <div class="w-4 h-4 bg-brand rounded-full"></div>
+                        <div class="w-px h-full bg-gray-800 mt-2"></div>
+                    </div>
+                    <div class="pb-4">
+                        <span class="text-brand font-bold text-lg">2020</span>
+                        <h4 class="text-xl font-semibold uppercase mt-1 mb-2">Expansion commerciale</h4>
+                        <p class="text-gray-400 font-light text-sm">Développement d'un portefeuille de projets commerciaux — bureaux, commerces de détail et espaces industriels — en parallèle de la clientèle résidentielle.</p>
+                    </div>
+                </div>
+                <div class="flex gap-8" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex flex-col items-center shrink-0">
+                        <div class="w-4 h-4 bg-brand rounded-full"></div>
+                    </div>
+                    <div>
+                        <span class="text-brand font-bold text-lg">Aujourd'hui</span>
+                        <h4 class="text-xl font-semibold uppercase mt-1 mb-2">Entreprise familiale</h4>
+                        <p class="text-gray-400 font-light text-sm">Groupe CGDL continue de grandir en restant fidèle à ses valeurs : transparence, fiabilité, durabilité et qualité de finition irréprochable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valeurs -->
+    <section class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-sm text-brand uppercase tracking-[0.2em] mb-2 font-bold">Ce qui nous guide</h2>
+                <h3 class="text-3xl md:text-4xl font-light uppercase tracking-wider">Nos Valeurs</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-10 border border-gray-800 bg-surface" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-handshake text-4xl text-brand mb-6"></i>
+                    <h4 class="text-xl font-semibold uppercase mb-4">Fiabilité</h4>
+                    <p class="text-gray-400 font-light text-sm">Des engagements tenus, des délais respectés et une communication honnête à chaque étape du projet.</p>
+                </div>
+                <div class="text-center p-10 border border-gray-800 bg-surface" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-layer-group text-4xl text-brand mb-6"></i>
+                    <h4 class="text-xl font-semibold uppercase mb-4">Durabilité</h4>
+                    <p class="text-gray-400 font-light text-sm">Des matériaux de qualité et des méthodes de construction qui assurent la longévité de chaque réalisation.</p>
+                </div>
+                <div class="text-center p-10 border border-gray-800 bg-surface" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-gem text-4xl text-brand mb-6"></i>
+                    <h4 class="text-xl font-semibold uppercase mb-4">Qualité de finition</h4>
+                    <p class="text-gray-400 font-light text-sm">Un souci du détail qui se voit dans chaque coin, chaque jointure et chaque surface livrée au client.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Équipe -->
+    <section class="py-24 bg-darker border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-sm text-brand uppercase tracking-[0.2em] mb-2 font-bold">Les visages derrière CGDL</h2>
+                <h3 class="text-3xl md:text-4xl font-light uppercase tracking-wider">Notre Équipe</h3>
+                <div class="w-16 h-1 bg-brand mx-auto mt-6"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-surface border border-gray-800 overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" alt="Cédrik Grenier" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold uppercase mb-1">Cédrik Grenier</h4>
+                        <span class="text-brand text-xs uppercase tracking-widest font-semibold">Fondateur & Directeur</span>
+                        <p class="text-gray-400 font-light text-sm mt-4 leading-relaxed">Plus de 15 ans d'expérience en gestion de projet. Cédrik supervise personnellement chaque chantier pour garantir qualité et respect des échéanciers.</p>
+                        <div class="mt-4 flex gap-3">
+                            <a href="tel:8199932206" class="text-gray-500 hover:text-brand transition-colors"><i class="fa-solid fa-phone"></i></a>
+                            <a href="mailto:admin@groupecgdl.com" class="text-gray-500 hover:text-brand transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface border border-gray-800 overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-72 overflow-hidden bg-gray-800 flex items-center justify-center">
+                        <i class="fa-solid fa-user text-6xl text-gray-600"></i>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold uppercase mb-1">Équipe de chantier</h4>
+                        <span class="text-brand text-xs uppercase tracking-widest font-semibold">Coordination & Exécution</span>
+                        <p class="text-gray-400 font-light text-sm mt-4 leading-relaxed">Notre équipe terrain coordonne les sous-traitants spécialisés et assure le suivi quotidien de l'avancement des travaux sur chaque projet.</p>
+                    </div>
+                </div>
+                <div class="bg-surface border border-gray-800 overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-72 overflow-hidden bg-gray-800 flex items-center justify-center">
+                        <i class="fa-solid fa-users text-6xl text-gray-600"></i>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold uppercase mb-1">Réseau de partenaires</h4>
+                        <span class="text-brand text-xs uppercase tracking-widest font-semibold">Corps de métier certifiés</span>
+                        <p class="text-gray-400 font-light text-sm mt-4 leading-relaxed">Plombiers, électriciens, menuisiers, couvreurs — un réseau fiable de professionnels que nous mobilisons selon les besoins de votre projet.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray-500 text-sm text-center mt-10 font-light italic">Les photos de l'équipe pourront être remplacées par vos images réelles.</p>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-16 bg-dark border-y border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center" data-aos="fade-up">
+                <div>
+                    <span class="text-4xl md:text-5xl font-bold text-brand block">15+</span>
+                    <span class="text-xs uppercase tracking-wider text-gray-500 mt-2 block">Années d'expérience</span>
+                </div>
+                <div>
+                    <span class="text-4xl md:text-5xl font-bold text-brand block">2018</span>
+                    <span class="text-xs uppercase tracking-wider text-gray-500 mt-2 block">Année de fondation</span>
+                </div>
+                <div>
+                    <span class="text-4xl md:text-5xl font-bold text-brand block">100+</span>
+                    <span class="text-xs uppercase tracking-wider text-gray-500 mt-2 block">Projets réalisés</span>
+                </div>
+                <div>
+                    <span class="text-4xl md:text-5xl font-bold text-brand block">100%</span>
+                    <span class="text-xs uppercase tracking-wider text-gray-500 mt-2 block">Engagement qualité</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand">
+        <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-light uppercase tracking-wider mb-6 text-white">Travaillons ensemble</h2>
+            <p class="text-white/80 font-light mb-10 text-lg">Confiez-nous votre prochain projet de rénovation ou d'agrandissement.</p>
+            <a href="soumission.html" class="inline-block bg-white text-brand px-10 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-dark hover:text-white transition-all duration-300">Demander une soumission</a>
+        </div>
+    </section>
+
+    <footer class="bg-[#050505] py-12 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo.png" alt="Logo Groupe CGDL" class="w-36 h-auto object-contain">
+                </a>
+                <p class="text-gray-600 text-sm font-light text-center">&copy; <script>document.write(new Date().getFullYear())</script> Groupe CGDL. Tous droits réservés.</p>
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/profile.php?id=100063132765716" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-brand hover:border-brand transition-all">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="text-gray-600 text-xs font-light text-center mt-8">Conception web par <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="text-brand hover:underline">Roy Marketing</a></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
