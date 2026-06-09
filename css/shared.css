@@ -76,3 +76,46 @@ body {
     opacity: 0;
     cursor: pointer;
 }
+
+.messenger-float {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.875rem 1.375rem;
+    background: linear-gradient(135deg, #E30A15, #b80812);
+    color: #fff;
+    border-radius: 9999px;
+    box-shadow: 0 4px 24px rgba(227, 10, 21, 0.45);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.messenger-float:hover {
+    color: #fff;
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(227, 10, 21, 0.6);
+}
+.messenger-float i {
+    font-size: 1.625rem;
+    line-height: 1;
+}
+@media (max-width: 640px) {
+    .messenger-float {
+        bottom: 1.25rem;
+        right: 1.25rem;
+        padding: 1rem;
+        width: 3.75rem;
+        height: 3.75rem;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .messenger-float-label {
+        display: none;
+    }
+}

@@ -58,3 +58,15 @@ if (fileInput && fileLabel) {
         }
     });
 }
+
+if (!document.getElementById('messenger-float')) {
+    const messengerBtn = document.createElement('a');
+    messengerBtn.id = 'messenger-float';
+    messengerBtn.className = 'messenger-float';
+    messengerBtn.href = 'https://m.me/100063132765716';
+    messengerBtn.target = '_blank';
+    messengerBtn.rel = 'noopener noreferrer';
+    messengerBtn.setAttribute('aria-label', 'Discuter sur Messenger avec Groupe CGDL');
+    messengerBtn.innerHTML = '<i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i><span class="messenger-float-label">Messenger</span>';
+    document.body.appendChild(messengerBtn);
+}
