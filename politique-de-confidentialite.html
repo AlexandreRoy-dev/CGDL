@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <title>Politique de confidentialité | Groupe CGDL</title>
+    <meta name="description" content="Politique de confidentialité de Groupe CGDL - collecte, utilisation et protection de vos renseignements personnels.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: '#E30A15', dark: '#121212', darker: '#0a0a0a', surface: '#1e1e1e' },
+                    fontFamily: { sans: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/shared.css">
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-brand selection:text-white">
+
+    <div class="noise-overlay"></div>
+
+    <header id="navbar" class="fixed w-full z-50 top-0 py-6 px-6 lg:px-12 flex justify-between items-center text-white navbar-scrolled">
+        <a href="index.html" class="flex items-center gap-3 z-50">
+            <img src="logo.png" alt="Logo Groupe CGDL" class="w-36 h-auto object-contain">
+        </a>
+        <nav class="hidden md:flex gap-8 text-sm uppercase tracking-wider font-medium items-center">
+            <a href="index.html" class="hover:text-brand transition-colors">Accueil</a>
+            <div class="nav-dropdown relative">
+                <button class="hover:text-brand transition-colors flex items-center gap-2">Services <i class="fa-solid fa-chevron-down text-xs"></i></button>
+                <div class="nav-dropdown-menu">
+                    <div class="bg-darker border border-gray-800 py-2 shadow-xl">
+                        <a href="services/construction-neuve.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Construction neuve</a>
+                        <a href="services/gestion-projet-residentiel.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Gestion de projet résidentiel</a>
+                        <a href="services/gestion-projet-commercial.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Gestion de projet commercial</a>
+                        <a href="services/renovations-residentielles.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Rénovations résidentielles</a>
+                        <a href="services/renovations-commerciales.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Rénovations commerciales</a>
+                        <a href="services/agrandissements-residentiel.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Agrandissements résidentiel</a>
+                        <a href="services/agrandissements-commercial.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Agrandissements commercial</a>
+                        <a href="services/autres-services.html" class="block px-6 py-3 hover:text-brand hover:bg-surface transition-colors normal-case tracking-normal">Autres services (jobines)</a>
+                    </div>
+                </div>
+            </div>
+            <a href="a-propos.html" class="hover:text-brand transition-colors">À Propos</a>
+            <a href="realisations.html" class="hover:text-brand transition-colors">Réalisations</a>
+            <a href="index.html#faq" class="hover:text-brand transition-colors">FAQ</a>
+            <a href="soumission.html" class="hover:text-brand transition-colors">Contact</a>
+            <a href="tel:8739450051" class="px-6 py-3 border border-brand text-brand hover:bg-brand hover:text-white transition-all duration-300">(873) 945-0051</a>
+        </nav>
+        <button class="md:hidden text-2xl z-50 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-darker flex flex-col items-center justify-center gap-6 text-lg z-40 overflow-y-auto py-24">
+            <a href="index.html" class="hover:text-brand">Accueil</a>
+            <a href="services/gestion-projet-residentiel.html" class="hover:text-brand">Services</a>
+            <a href="a-propos.html" class="hover:text-brand">À Propos</a>
+            <a href="realisations.html" class="hover:text-brand">Réalisations</a>
+            <a href="soumission.html" class="hover:text-brand">Contact</a>
+            <a href="tel:8739450051" class="px-6 py-2 border border-brand text-brand hover:bg-brand hover:text-white transition-all duration-300">(873) 945-0051</a>
+        </div>
+    </header>
+
+    <section class="page-hero pt-32">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1600" alt="Politique de confidentialité">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+            <p class="text-brand uppercase tracking-[0.3em] text-sm mb-4 font-semibold">Protection des données</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-6 leading-tight">Politique de confidentialité</h1>
+            <p class="text-gray-300 text-lg md:text-xl font-light max-w-2xl mx-auto">Dernière mise à jour : mai 2026</p>
+        </div>
+    </section>
+
+    <section class="py-24 bg-dark">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8 prose-policy">
+            <div class="space-y-10 text-gray-400 font-light leading-relaxed" data-aos="fade-up">
+
+                <div>
+                    <h2 class="text-white text-xl font-semibold uppercase tracking-wide mb-4">1. Responsable</h2>
+                    <p>Groupe CGDL Inc. (« nous », « notre ») est responsable des renseignements personnels collectés par l'intermédiaire de ce site Web et dans le cadre de nos services de construction, rénovation et gestion de projet en Estrie.</p>
+                    <p class="mt-4">RBQ : 5749-2076-01<br>Téléphone : <a href="tel:8739450051" class="text-brand hover:underline">(873) 945-0051</a></p>
+                </div>
+
+                <div>
+                    <h2 class="text-white text-xl font-semibold uppercase tracking-wide mb-4">2. Renseignements collectés</h2>
+                    <p>Nous pouvons collecter les renseignements suivants lorsque vous utilisez notre site ou nos formulaires de contact :</p>
+                    <ul class="list-disc pl-6 mt-4 space-y-2">
+                        <li>Nom et coordonnées (courriel, téléphone, adresse)</li>
+                        <li>Informations relatives à votre projet (type de service, description, fichiers joints)</li>
+                        <li>Données techniques de navigation (adresse IP, type de navigateur, pages visitées)</li>
+                        <li>Témoins (cookies) et données similaires, tel que décrit ci-dessous</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-white text-xl font-semibold uppercase tracking-wide mb-4">3. Utilisation des renseignements</h2>
+                    <p>Vos renseignements sont utilisés pour :</p>
+                    <ul class="list-disc pl-6 mt-4 space-y-2">
+                        <li>Répondre à vos demandes de soumission ou d'information</li>
+                        <li>Planifier et exécuter vos projets de construction ou rénovation</li>
+                        <li>Communiquer avec vous au sujet de nos services</li>
+                        <li>Améliorer notre site Web et l'expérience utilisateur</li>
+                        <li>Respecter nos obligations légales et réglementaires</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-white text-xl font-semibold uppercase tracking-wide mb-4">4. Témoins (cookies)</h2>
+                    <p>Ce site utilise des témoins essentiels au fonctionnement du site (par exemple, mémoriser votre consentement aux témoins) ainsi que des témoins analytiques pour comprendre comment les visiteurs utilisent nos pages.</p>
+                    <p class="mt-4">Vous pouvez accepter ou refuser les témoins non essentiels via la bannière affichée lors de votre première visite. Vous pouvez également configurer votre navigateur pour bloquer ou supprimer les témoins.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-white text-xl font-semibold uppercase tracking-wide mb-4">5. Partage des renseignements</h2>
+                    <p>Nous ne vendons pas vos renseignements personnels. Nous pouvons les partager uniquement avec :</p>
+                    <ul class="list-disc pl-6 mt-4 space-y-2">
+                        <li>Nos sous-traitants et partenaires professionnels impliqués dans votre projet</li>
+                        <li>Des fournisseurs de services technologiques (hébergement, formulaires en ligne)</li>
+                        <li>Les autorités compétentes lorsque la loi l'exige</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-white text-xl font-semibold uppercase tracking-wide mb-4">6. Conservation et sécurité</h2>
+                    <p>Nous conservons vos renseignements aussi longtemps que nécessaire pour les fins décrites dans cette politique ou conformément aux exigences légales. Des mesures de sécurité raisonnables sont mises en place pour protéger vos données contre l'accès non autorisé, la perte ou la divulgation.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-white text-xl font-semibold uppercase tracking-wide mb-4">7. Vos droits</h2>
+                    <p>Conformément aux lois applicables au Québec, vous pouvez demander l'accès à vos renseignements personnels, leur rectification ou leur suppression, sous réserve des exceptions prévues par la loi. Pour exercer ces droits, contactez-nous au <a href="tel:8739450051" class="text-brand hover:underline">(873) 945-0051</a> ou via notre <a href="soumission.html" class="text-brand hover:underline">formulaire de contact</a>.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-white text-xl font-semibold uppercase tracking-wide mb-4">8. Modifications</h2>
+                    <p>Nous pouvons mettre à jour cette politique de confidentialité à l'occasion. Toute modification sera publiée sur cette page avec une date de mise à jour révisée.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#050505] py-12 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo.png" alt="Logo Groupe CGDL" class="w-36 h-auto object-contain">
+                </a>
+                <div class="text-center">
+                    <p class="text-gray-600 text-sm font-light">&copy; <script>document.write(new Date().getFullYear())</script> Groupe CGDL. Tous droits réservés.</p>
+                    <p class="text-gray-500 text-xs font-light mt-2">RBQ : 5749-2076-01</p>
+                    <p class="text-gray-600 text-xs font-light mt-2"><a href="politique-de-confidentialite.html" class="text-brand">Politique de confidentialité</a></p>
+                    <p class="text-gray-600 text-xs font-light mt-2">Conception web par <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="text-brand hover:underline">Roy Marketing</a></p>
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/profile.php?id=100063132765716" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-brand hover:border-brand transition-all">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

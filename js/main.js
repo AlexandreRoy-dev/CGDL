@@ -70,3 +70,45 @@ if (!document.getElementById('messenger-float')) {
     messengerBtn.innerHTML = '<i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i><span class="messenger-float-label">Messenger</span>';
     document.body.appendChild(messengerBtn);
 }
+
+(function initCookieConsent() {
+    const STORAGE_KEY = 'cgdl-cookie-consent';
+    if (localStorage.getItem(STORAGE_KEY)) return;
+
+    const isServicePage = window.location.pathname.includes('/services/');
+    const privacyHref = isServicePage ? '../politique-de-confidentialite.html' : 'politique-de-confidentialite.html';
+
+    const banner = document.createElement('div');
+    banner.id = 'cookie-banner';
+    banner.className = 'cookie-banner';
+    banner.setAttribute('role', 'dialog');
+    banner.setAttribute('aria-label', 'Consentement aux témoins');
+    banner.innerHTML = `
+        <div class="cookie-banner-inner">
+            <p class="cookie-banner-text">
+                Ce site utilise des témoins (cookies) pour améliorer votre expérience et analyser la fréquentation.
+                En cliquant sur « Accepter », vous consentez à leur utilisation conformément à notre
+                <a href="${privacyHref}">politique de confidentialité</a>.
+            </p>
+            <div class="cookie-banner-actions">
+                <button type="button" class="cookie-banner-btn cookie-banner-btn-decline" data-cookie-action="decline">Refuser</button>
+                <button type="button" class="cookie-banner-btn cookie-banner-btn-accept" data-cookie-action="accept">Accepter</button>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(banner);
+    document.body.classList.add('cookie-banner-visible');
+
+    requestAnimationFrame(() => banner.classList.add('is-visible'));
+
+    function dismissConsent(value) {
+        localStorage.setItem(STORAGE_KEY, value);
+        banner.classList.remove('is-visible');
+        document.body.classList.remove('cookie-banner-visible');
+        setTimeout(() => banner.remove(), 400);
+    }
+
+    banner.querySelector('[data-cookie-action="accept"]').addEventListener('click', () => dismissConsent('accepted'));
+    banner.querySelector('[data-cookie-action="decline"]').addEventListener('click', () => dismissConsent('declined'));
+})();
