@@ -47,6 +47,13 @@ document.querySelectorAll('.faq-btn').forEach(btn => {
     });
 });
 
+document.querySelectorAll('form[action*="formspree.io"]').forEach(form => {
+    const nextInput = form.querySelector('input[name="_next"]');
+    if (nextInput) {
+        nextInput.value = new URL('merci.html', window.location.href).href;
+    }
+});
+
 const fileInput = document.getElementById('attachment');
 const fileLabel = document.getElementById('file-label');
 if (fileInput && fileLabel) {
